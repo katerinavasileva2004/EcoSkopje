@@ -10,10 +10,10 @@ EcoCity AI monitors bin fill levels, flags containers that are about to overflow
 
 This project was created during a hackathon in Skopje, North Macedonia, on the theme "Fix My City". It was built by our team within the time limits of the event, so it is a working prototype and proof of concept rather than a production system.
 
-Event: AI Hackathon HACKTOBERFEST 2026
-Date: 17.10.2026
-Challenge: Fix My City
-Event Information: https://42.mk/events/hacktoberfest-2026
+- Event: AI Hackathon HACKTOBERFEST 2026
+- Date: 17.10.2026
+- Challenge: Fix My City
+- Event Information: https://42.mk/events/hacktoberfest-2026
 
 ---
 
