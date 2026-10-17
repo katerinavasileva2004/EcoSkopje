@@ -6,7 +6,7 @@ EcoCity AI monitors bin fill levels, flags containers that are about to overflow
 
 > **Prototype notice:** all sensor readings, bin locations and the street grid are **simulated**. The project demonstrates the concept; it is not connected to real bins.
 
-# Hackathon
+## Hackathon
 
 This project was created during a hackathon in Skopje, North Macedonia, on the theme "Fix My City". It was built by our team within the time limits of the event, so it is a working prototype and proof of concept rather than a production system.
 
