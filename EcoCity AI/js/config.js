@@ -15,10 +15,10 @@
       /* Get a key at https://aistudio.google.com/apikey. A key in front-end code can be read by
          anyone who opens the page, so use a restricted key, never commit it, and for a real
          product call Gemini from a small server instead. */
-      geminiApiKey: '',
+      geminiApiKey: 'AQ.Ab8RN6KSovLYdyPKKGEL3QrlhVubtNHRufY-oSeyA9Mqnd4Rug',
 
       /* Check ai.google.dev/gemini-api/docs/models for the current vision-capable model name. */
-      geminiModel: 'gemini-2.5-flash',
+      geminiModel: 'gemini-3.8-flash',
 
       /* Photos are shrunk to this many pixels on the long edge before upload. */
       maxImageEdge: 1024
