@@ -1,0 +1,45 @@
+/* Scanner panel: viewfinder, result card, example chips, scan log. */
+
+.vf { position: relative; aspect-ratio: 4 / 3; max-width: 100%; border-radius: 10px; background: var(--surface-2); overflow: hidden; display: grid; place-items: center; border: 1px solid var(--line); margin-top: 12px; }
+.vf img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.vf .hint { display: grid; justify-items: center; gap: 8px; color: var(--muted); text-align: center; padding: 0 24px; font-size: 14px; }
+.vf .c { position: absolute; width: 26px; height: 26px; border: 3px solid var(--accent); z-index: 2; }
+.vf .tl { top: 12px; left: 12px; border-right: 0; border-bottom: 0; border-top-left-radius: 8px; }
+.vf .tr { top: 12px; right: 12px; border-left: 0; border-bottom: 0; border-top-right-radius: 8px; }
+.vf .bl { bottom: 12px; left: 12px; border-right: 0; border-top: 0; border-bottom-left-radius: 8px; }
+.vf .br { bottom: 12px; right: 12px; border-left: 0; border-top: 0; border-bottom-right-radius: 8px; }
+.vf .sweep { position: absolute; left: 0; right: 0; height: 3px; background: var(--accent); box-shadow: 0 0 18px 4px var(--accent); opacity: 0; z-index: 2; }
+.vf.busy .sweep { opacity: .9; animation: sweep 1.5s ease-in-out infinite alternate; }
+@keyframes sweep { from { top: 6%; } to { top: 94%; } }
+
+.scan-actions { margin-top: 12px; }
+
+.result { margin-top: 12px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--bg); }
+.result .head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 10px 14px; background: color-mix(in srgb, var(--c, var(--s-grey)) 20%, var(--surface)); border-bottom: 3px solid var(--c, var(--s-grey)); }
+.result .body { padding: 14px; display: grid; gap: 12px; }
+.result .item { font: 700 26px/1.1 var(--font-display); text-wrap: balance; }
+.goes { display: grid; gap: 2px; }
+.goes b { font-weight: 600; }
+dl.facts { margin: 0; display: grid; gap: 8px; font-size: 14px; }
+dl.facts div { display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 10px; }
+dl.facts dt { font: 500 11px/1.9 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+dl.facts dd { margin: 0; }
+.conf { display: flex; align-items: center; gap: 10px; font: 500 12px var(--font-mono); }
+.conf .track { flex: 1; height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; }
+.conf .track i { display: block; height: 100%; background: var(--accent); }
+
+.examples { margin-top: 18px; display: grid; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.ex { min-height: 38px; padding: 0 13px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; font-size: 14px; }
+.ex:hover { background: var(--surface-2); }
+
+.log { margin: 8px 0 0; padding: 0; list-style: none; display: grid; border-top: 1px solid var(--line); }
+.log li { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.log li.empty { grid-template-columns: 1fr; }
+.log .th { width: 40px; height: 40px; border-radius: 6px; background: var(--surface-2); object-fit: cover; display: grid; place-items: center; color: var(--muted); }
+.log .nm { min-width: 0; overflow-wrap: anywhere; }
+.log .tm { font: 400 11px var(--font-mono); color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .vf.busy .sweep { animation: none; top: 50%; }
+}

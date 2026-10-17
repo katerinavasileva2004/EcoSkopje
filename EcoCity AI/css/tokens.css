@@ -1,0 +1,88 @@
+/* Design tokens: every colour and font used by the app.
+   Light values live on :root, dark values redefine the same names. */
+
+:root {
+  --bg: #E8EDE9;
+  --surface: #F6F9F6;
+  --surface-2: #DCE4DE;
+  --fg: #12201A;
+  --muted: #566660;
+  --line: #C3CFC6;
+
+  --accent: #0E6B4F;
+  --on-accent: #F3FBF7;
+
+  /* map */
+  --map-bg: #DAE4DD;
+  --street: #FBFDFB;
+  --park: #B9D6BF;
+  --water: #B3CFE0;
+  --route: #1B5BD0;
+
+  /* bin streams (the standard sorting colours) */
+  --s-yellow: #E0B100;
+  --s-blue: #3B7BD1;
+  --s-green: #2F9A58;
+  --s-brown: #8F5E3C;
+  --s-grey: #85908A;
+  --s-red: #D24A33;
+
+  /* fill severity */
+  --ok: #1E8A5A;   --on-ok: #FFFFFF;
+  --warn: #E3A400; --on-warn: #1A1300;
+  --crit: #D1432A; --on-crit: #FFFFFF;
+
+  --font-display: 'Bricolage Grotesque', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C1511;
+    --surface: #14201A;
+    --surface-2: #1C2B24;
+    --fg: #E3EEE7;
+    --muted: #94A79C;
+    --line: #2A3A32;
+    --accent: #46C79B;
+    --on-accent: #05231A;
+    --map-bg: #0F1B16;
+    --street: #22342B;
+    --park: #16301E;
+    --water: #13283A;
+    --route: #7CAEFF;
+    --s-blue: #5C97E6;
+    --s-brown: #B07A55;
+    --s-green: #3FB36B;
+    --s-red: #EB6A52;
+    --ok: #3FBF8B;   --on-ok: #04170F;
+    --warn: #F0B429; --on-warn: #1A1300;
+    --crit: #F0674D; --on-crit: #1F0903;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0C1511;
+  --surface: #14201A;
+  --surface-2: #1C2B24;
+  --fg: #E3EEE7;
+  --muted: #94A79C;
+  --line: #2A3A32;
+  --accent: #46C79B;
+  --on-accent: #05231A;
+  --map-bg: #0F1B16;
+  --street: #22342B;
+  --park: #16301E;
+  --water: #13283A;
+  --route: #7CAEFF;
+  --s-blue: #5C97E6;
+  --s-brown: #B07A55;
+  --s-green: #3FB36B;
+  --s-red: #EB6A52;
+  --ok: #3FBF8B;   --on-ok: #04170F;
+  --warn: #F0B429; --on-warn: #1A1300;
+  --crit: #F0674D; --on-crit: #1F0903;
+  color-scheme: dark;
+}
