@@ -121,11 +121,8 @@ Serve the page locally (`python -m http.server`) rather than over HTTPS, so the 
 
 ## Team
 
-| Name | Role |
-| --- | --- |
-| _Your name_ | _Role_ |
-| _Teammate_ | _Role_ |
-
-## License
-
-Choose a license (for example [MIT](https://choosealicense.com/licenses/mit/)) and add a `LICENSE` file.
+| Name |
+| --- |
+| Katerina Vasileva |
+| David Stanojkovski |
+| Nikola Antic |
