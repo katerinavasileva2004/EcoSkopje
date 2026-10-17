@@ -17,11 +17,11 @@ This project was created during a hackathon in Skopje, North Macedonia, on the t
 
 ## Team
 
-| Name |
-| --- |
-| Katerina Vasileva |
-| David Stanojkovski |
-| Nikola Antic |
+| Name | Role |
+| --- | --- |
+| Katerina Vasileva | Developer |
+| David Stanojkovski | Developer |
+| Nikola Antic | Developer |
 
 ---
 
