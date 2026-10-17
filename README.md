@@ -119,14 +119,6 @@ Serve the page locally (`python -m http.server`) rather than over HTTPS, so the 
 
 **Assumptions:** one map unit is one metre; fuel use is 0.45 L/km for a collection truck. The "fixed round" used for comparison visits all bins in a fixed, unoptimized order, so the reported savings reflect both skipping low-fill bins and ordering the stops.
 
-## Project structure
-
-```
-.
-├── index.html    # the whole app (markup, styles and scripts)
-└── README.md
-```
-
 ## Roadmap
 
 - Connect real fill-level sensors (ultrasonic or weight) over MQTT or an HTTP API
