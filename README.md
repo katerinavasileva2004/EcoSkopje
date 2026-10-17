@@ -15,6 +15,14 @@ This project was created during a hackathon in Skopje, North Macedonia, on the t
 - Challenge: Fix My City
 - Event Information: https://42.mk/events/hacktoberfest-2026
 
+## Team
+
+| Name |
+| --- |
+| Katerina Vasileva |
+| David Stanojkovski |
+| Nikola Antic |
+
 ---
 
 ## The problem
@@ -127,11 +135,3 @@ Serve the page locally (`python -m http.server`) rather than over HTTPS, so the 
 - Multiple trucks and capacity limits in the route planner
 - Citizen reports for illegal dumping and damaged bins
 - Fine-tune a dedicated image classifier on a dataset such as TrashNet or TACO
-
-## Team
-
-| Name |
-| --- |
-| Katerina Vasileva |
-| David Stanojkovski |
-| Nikola Antic |
