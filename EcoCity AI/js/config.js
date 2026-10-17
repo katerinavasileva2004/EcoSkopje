@@ -15,7 +15,7 @@
       /* Get a key at https://aistudio.google.com/apikey. A key in front-end code can be read by
          anyone who opens the page, so use a restricted key, never commit it, and for a real
          product call Gemini from a small server instead. */
-      geminiApiKey: 'AQ.Ab8RN6KSovLYdyPKKGEL3QrlhVubtNHRufY-oSeyA9Mqnd4Rug',
+      geminiApiKey: 'AQ.Ab8RN6IaZ4cZ9QU1SeBpjk7ydHgYkdFGJhJVZVDz32Z9CuTVAw',
 
       /* Check ai.google.dev/gemini-api/docs/models for the current vision-capable model name. */
       geminiModel: 'gemini-3.8-flash',
